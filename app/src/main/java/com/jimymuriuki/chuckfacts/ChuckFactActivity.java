@@ -38,6 +38,7 @@ public class ChuckFactActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onClick(View v) {
-
+        String randomFact=RandomGenerator.getRandomFact(chuckFacts);
+        chuckFact.setText(randomFact);
     }
 }
