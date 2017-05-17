@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,21 +9,31 @@
 
 
     <TextView
-        android:id="@+id/tv_chuckFactTitle"
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_chuck_fact_title"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="40dp"
-        android:text="Chuck Facts!"
-        android:textSize="20sp"
-       />
+        android:text="@string/app_name"
+        android:layout_margin="16dp"
+        android:textSize="20sp"/>
     <TextView
-        android:id="@+id/tv_chuckFact"
+        android:id="@+id/tv_chuck_fact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-
-        android:text="Chuck Facts!"
+        android:text="@string/app_name"
         android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tv_chuck_fact_title"
+        android:layout_centerInParent="true" />
+    <Button
+        android:id="@+id/btn_changeFact"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+       android:text="New Fact"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
         />
-</LinearLayout>
+
+</RelativeLayout>
