@@ -14,6 +14,7 @@ public class ChuckFactActivity extends AppCompatActivity implements View.OnClick
     private Resources resources;
     private String[] chuckFacts;
 
+
     //define the views
     @Bind(R.id.tv_chuck_fact_title)TextView chuckFactTitle;
     @Bind(R.id.tv_chuck_fact)TextView chuckFact;
@@ -27,8 +28,8 @@ public class ChuckFactActivity extends AppCompatActivity implements View.OnClick
 
         resources=getResources();
         chuckFacts=resources.getStringArray(R.array.chuck_jokes_array);
-        chuckFact.setText(chuckFacts[0]);
-
+        String randomFact=RandomGenerator.getRandomFact(chuckFacts);
+        chuckFact.setText(randomFact);
         changeFact.setOnClickListener(this);
 
 
