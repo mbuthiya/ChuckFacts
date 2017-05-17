@@ -1,4 +1,4 @@
-#Chuck Facts
+# Chuck Facts
 
 An android application that displays random funny Chuck Norris facts
 
