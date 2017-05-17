@@ -1,6 +1,7 @@
 package com.jimymuriuki.chuckfacts;
 
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,6 +32,7 @@ public class ChuckFactActivity extends AppCompatActivity implements View.OnClick
         String randomFact=RandomGenerator.getRandomFact(chuckFacts);
         chuckFact.setText(randomFact);
         changeFact.setOnClickListener(this);
+        changeFact.setBackgroundColor(Color.CYAN);
 
 
 
