@@ -32,7 +32,7 @@ public class ChuckFactActivity extends AppCompatActivity implements View.OnClick
         String randomFact=RandomGenerator.getRandomFact(chuckFacts);
         chuckFact.setText(randomFact);
         changeFact.setOnClickListener(this);
-        changeFact.setBackgroundColor(Color.CYAN);
+
 
 
 
