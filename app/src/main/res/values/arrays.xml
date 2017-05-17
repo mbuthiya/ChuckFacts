@@ -32,4 +32,16 @@
         <item>Chuck Norris is the only person that can punch a cyclops between the eye.</item>
     </string-array>
 
+    <array name="background_colors">
+        <item>@color/brick</item>
+        <item>@color/california</item>
+        <item>@color/cGreen</item>
+        <item>@color/ecstasy</item>
+        <item>@color/honeyFlower</item>
+        <item>@color/jGreen</item>
+        <item>@color/monza</item>
+        <item>@color/razmataz</item>
+        <item>@color/sRed</item>
+        <item>@color/turquoise</item>
+    </array>
 </resources>
